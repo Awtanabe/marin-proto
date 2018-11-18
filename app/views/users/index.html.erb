@@ -1,0 +1,15 @@
+
+
+<%@users.each do |user|%>
+
+ <div class="container">
+   <div>
+      <%=user.name %>
+   </div>
+   <div>
+     <%=user.email %>
+   </div>
+   <%=link_to "#", "users/#{user.id}" %>
+ </div>
+
+<%end%>

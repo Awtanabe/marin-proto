@@ -1,0 +1,15 @@
+<h1>aaa</h1>
+
+
+
+
+<%form_for [@room, @chat] do |f| %>
+
+ <%= f.label :body %>
+ <%= f.text_field :body %>
+
+ <%= f.label :file %>
+ <%= f.file_field :image %>
+
+
+<%end%>
